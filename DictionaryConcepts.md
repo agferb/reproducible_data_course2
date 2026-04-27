@@ -16,45 +16,45 @@
   
   - Exists
 
-## 1.2. How to start basic tracking with `git`
+## 1.2. How to start  `git` in repository
 
-### Start git in project (repository)
+#### Init git in project (repository)
 
 Only once in the repository, no need to reactivate in sub-folders
 
 ```bash
-user$ git init
+git init
 ```
 
-### Set git configurations
+#### Set git configurations
 
 Check if `git` has your information in the `config` file
 
 ```bash
-user$ git config --global --list
+git config --global --list
 ```
 
 Add or change your information
 
 ```bash
-user$ git config --global user.name "Your Name"
-user$ git config --global user.email "you_email@domain.com"
+git config --global user.name "Your Name"
+git config --global user.email "you_email@domain.com"
 ```
 
-### Commit
+## 1.3. How to add commits
 
 Different from 'save'! Whenever you want to keep the current version, send it to `.git` folder.
 
 **Files need to be saved before commit!**
 
 ```bash
-user$ git add file.md
-user$ git commit -m "[meaningful message]"
+git add file.md
+git commit -m "[meaningful message]"
 ```
 
 #### Meaningful message
 
-For you and your collaborators to remember changes.
+For you and your collaborators to remember tracks
 
 - **Why** was changed
 
@@ -64,4 +64,21 @@ For you and your collaborators to remember changes.
 
 - **Limitations** of the change
 
-#### 
+#### More detailed message
+
+```bash
+git commit
+```
+
+Will open text editor to write a commit message.
+
+#### Change to other message editors
+
+```bash
+git config --global core.editor "nano"        # Nano
+git config --global core.editor "code --wait" # VSCode
+```
+
+## 1.4. Staging area
+
+Folder to keep files to be tracked before adding a global commit message.
