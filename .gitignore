@@ -1,4 +1,12 @@
+# File formats to ignore
 *.jpg
 *.png
 
+# Files to ignore
 dont_track.md
+
+# Files to track
+!OIP-1317829618.jpg
+
+# Ignore .gitignore file
+.gitignore
