@@ -193,3 +193,17 @@ Your SSH key password will be asked, remember it!
 git push
 git pull
 ```
+
+## 1.7. Undo
+
+For a deleted repository locally, extract it from GitHub
+
+```bash
+git clone <repository_SSH>
+```
+
+For an uncorrectly made commit, revert it
+
+```bash
+git revert
+```
