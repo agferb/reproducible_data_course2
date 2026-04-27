@@ -1,8 +1,6 @@
 # 1. Git Basic Concepts
 
-## 1.1. Dictionary of Concepts
-
-### Differenciating
+## 1.1. Differenciating concepts
 
 - Git:
   
@@ -18,7 +16,9 @@
   
   - Exists
 
-#### Start git in project (repository)
+## 1.2. How to start basic tracking with `git`
+
+### Start git in project (repository)
 
 Only once in the repository, no need to reactivate in sub-folders
 
@@ -26,7 +26,7 @@ Only once in the repository, no need to reactivate in sub-folders
 user$ git init
 ```
 
-#### Git configurations
+### Set git configurations
 
 Check if `git` has your information in the `config` file
 
@@ -41,16 +41,20 @@ user$ git config --global user.name "Your Name"
 user$ git config --global user.email "you_email@domain.com"
 ```
 
-#### Commit
+### Commit
 
-Different from 'save'! Whenever you want to keep the current version, send it to `.git` folder
+Different from 'save'! Whenever you want to keep the current version, send it to `.git` folder.
+
+**Files need to be saved before commit!**
 
 ```bash
 user$ git add file.md
 user$ git commit -m "[meaningful message]"
 ```
 
-#### Meaningful message:
+#### Meaningful message
+
+For you and your collaborators to remember changes.
 
 - **Why** was changed
 
