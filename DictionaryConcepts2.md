@@ -187,14 +187,19 @@ Your SSH key password will be asked, remember it!
 
 - `push`: local to remote
 
+- ```bash
+  git push
+  ```
+
 - `pull`: remote to local
 
-```bash
-git push
-git pull
-```
+- ```bash
+  git pull
+  ```
 
 ## 1.7. Undo
+
+#### Repositories
 
 For a deleted repository locally, extract it from GitHub
 
@@ -202,8 +207,42 @@ For a deleted repository locally, extract it from GitHub
 git clone <repository_SSH>
 ```
 
-For an uncorrectly made commit, revert it
+#### Commits
 
-```bash
-git revert
-```
+To undo a uncorrectly made commit **without** undoing the changes, `reset` can be used. For safety reasons, it is prefered to not use the option that deletes changes from commits.
+
+- Files stay modified and staged — ready to re-commit:
+
+- ```bash
+  git reset --soft <commit_id>
+  ```
+
+- Files are modified but unstaged:
+
+- ```bash
+  git reset <commit_id>
+  ```
+
+To rewrite a commit (no tracking info lost) **and** its associated changes, `revert` can be used. When called, it opens the commit editor to rewrite it.
+
+- To open editor before rewritting commit:
+
+- ```bash
+  git revert <commit_id>
+  ```
+
+- To rewrite commit without opening editor:
+
+- ```bash
+  git revert --no-edit <commit_id>
+  ```
+
+There are multiple ways of referencing the commits in the previous commands
+
+- Type the log ID of the commit
+
+- Use the argument `HEAD`:
+  
+  - `reset` requires `HEAD~1` or larger, being `~1` the previous commit to be returned to
+  
+  - `revert` understands `HEAD` as the current commit to be rewritten
