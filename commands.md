@@ -7,3 +7,6 @@ Add to staging area
 
 Add to local repository
 `git commit -m "meaningful message"`
+
+Push changes to remote repo
+`git push`
