@@ -11,4 +11,3 @@ Add to local repository
 Push changes to remote repo
 `git push`
 
-THIRD CONFLICT, HOPEFULLY SUCCESSFUL ONE
