@@ -12,3 +12,4 @@ Push changes to remote repo
 `git push`
 
 ## Let it be a conflict! THE CONFLICT.
+## MORE CONFLICTS HERE
