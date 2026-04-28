@@ -10,5 +10,3 @@ Add to local repository
 
 Push changes to remote repo
 `git push`
-
-THIS SHOULDNT BE HERE
