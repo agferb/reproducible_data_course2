@@ -11,4 +11,9 @@ Add to local repository
 Push changes to remote repo
 `git push`
 
+<<<<<<< HEAD
 I just created a conflict MUAHUAHUA
+=======
+Create new branch
+`git branch <branch_name>`
+>>>>>>> branch_concept
