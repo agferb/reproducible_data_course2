@@ -293,3 +293,11 @@ How to move between branches:
 ```bash
 git checkout <branch_to_go>
 ```
+
+Branches need to be push independently. Pushing the first time:
+
+```bash
+git push --set-upstream origin <branch_name>
+```
+
+Pushing from the 2nd time onwards just need to run `git push` in the branch.
