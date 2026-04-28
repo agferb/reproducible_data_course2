@@ -19,3 +19,6 @@ git checkout <name>
 
 or
 `git checkout -b <name>`
+
+To delete a branch:
+`git branch -d <name>`
