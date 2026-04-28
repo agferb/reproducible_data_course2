@@ -10,3 +10,12 @@ Add to local repository
 
 Push changes to remote repo
 `git push`
+
+# Creating branches
+```
+git branch <name>
+git checkout <name>
+```
+
+or
+`git checkout -b <name>`
