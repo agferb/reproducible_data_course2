@@ -83,6 +83,20 @@ git commit
 
 Will open text editor to write a commit message.
 
+#### Adding multiple files
+
+- All tracked files:
+  
+  ```bash
+  git add -u
+  ```
+
+- All tracked and untracked files:
+  
+  ```bash
+  git add -A
+  ```
+
 #### Change to other message editors
 
 - Nano (default, most realiable option):
