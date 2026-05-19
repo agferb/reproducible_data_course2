@@ -10,3 +10,6 @@ dont_track.md
 
 # Ignore .gitignore file
 .gitignore
+
+# Folders to ignore
+Containerise-data-analysis-with-Docker-Apptainer/
